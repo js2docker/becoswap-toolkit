@@ -1,40 +1,25 @@
-# BecoSwap UIkit
+# BecoSwap Toolkit
 
-[![Version](https://img.shields.io/npm/v/@becoswap-libs/uikit)](https://www.npmjs.com/package/@becoswap-libs/uikit) [![Size](https://img.shields.io/bundlephobia/min/@becoswap-libs/uikit)](https://www.npmjs.com/package/@becoswap-libs/uikit)
+This repository is a monorepo manage with [yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/) and [Lerna](https://lerna.js.org/). 
 
-BecoSwap UIkit is a set of React components and hooks used to build pages on BecoSwap's apps. It also contains a theme file for dark and light mode.
+## Packages
 
-## Install
+- [pancake-uikit](https://github.com/becoswap/becoswap-toolkit/tree/master/packages/pancake-uikit) : React components used to build the Pancake UI
+- [eslint-config-beco](https://github.com/becoswap/becoswap-toolkit/tree/master/packages/eslint-config-beco) : An ESLint config for beco, with Typescript and Prettier support
 
-`yarn add @becoswap-libs/uikit`
+## How to use
 
-## Setup
-
-### Theme
-
-Before using Becoswap UIkit, you need to provide the theme file to styled-component.
+Clone the repository 
 
 ```
-import { ThemeProvider } from 'styled-components'
-import { light, dark } from '@becoswap-libs/uikit'
-...
-<ThemeProvider theme={isDark}>...</ThemeProvider>
+git clone git@github.com:becoswap/becoswap-toolkit.git
 ```
 
-### Reset
-
-A reset CSS is available as a global styled component.
+Run yarn at the root of the workspace
 
 ```
-import { ResetCSS } from '@becoswap-libs/uikit'
-...
-<ResetCSS />
+cd becoswap-toolkit
+yarn
 ```
 
-### Types
-
-This project is built with Typescript and export all the relevant types.
-
-## How to use the UIkit
-
-If you want to use components from the UIkit, check the [Storybook documentation](https://becoswap.github.io/becoswap-uikit/)
+Then, refer to the readme of each project.
